@@ -1,5 +1,5 @@
 import { EuiComboBox } from '@elastic/eui';
-import { wrapEuiField } from './wrap-field';
+import { wrapEuiField } from '@expr/playground.wrap-field';
 
 export const ComboBox = wrapEuiField({
   EuiComponent: EuiComboBox,
