@@ -8,7 +8,7 @@
         "rootDir": "src/combobox"
     },
     "wrap-field": {
-        "scope": "",
+        "scope": "dylanculfogienis.test2",
         "version": "1.0.0",
         "mainFile": "index.tsx",
         "rootDir": "src/wrap-field"

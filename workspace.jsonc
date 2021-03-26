@@ -22,7 +22,7 @@
     /**
      * default scope for all components in workspace.
      **/
-    "defaultScope": "expr.playground"
+    "defaultScope": "dylanculfogienis.test2"
   },
   /**
    * main configuration for component dependency resolution.
