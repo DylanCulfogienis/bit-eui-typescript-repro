@@ -1,6 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
+import '@elastic/eui/dist/eui_theme_light.json';
+import '@elastic/eui/dist/eui_theme_light.css';
 import './App.css';
+import { ComboBox } from './combobox';
+import { EuiPanel } from '@elastic/eui';
 
 function App() {
   return (
@@ -18,6 +22,9 @@ function App() {
         >
           Learn React
         </a>
+        <EuiPanel style={{width: 400}}>
+          <ComboBox name="Test" />
+        </EuiPanel>
       </header>
     </div>
   );

@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@babel/plugin-syntax-class-properties": "^7.12.13",
+    "@elastic/datemath": "5.0.3",
     "@elastic/eui": "29.3.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
