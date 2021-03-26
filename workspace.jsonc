@@ -1,0 +1,71 @@
+/**
+ * this is the main configuration file of your bit workspace.
+ * for full documentation, please see: https://docs.bit.dev/configuration
+ **/{
+  "$schema": "https://static.bit.dev/teambit/schemas/schema.json",
+  /**
+   * main configuration of the Bit workspace.
+   **/
+  "teambit.workspace/workspace": {
+    /**
+     * the name of the component workspace. used for development purposes.
+     **/
+    "name": "bit-eui-test",
+    /**
+     * set the icon to be shown on the Bit server.
+     **/
+    "icon": "https://static.bit.dev/bit-logo.svg",
+    /**
+     * default directory for all components in workspace.
+     **/
+    "defaultDirectory": "src",
+    /**
+     * default scope for all components in workspace.
+     **/
+    "defaultScope": "expr.playground"
+  },
+  /**
+   * main configuration for component dependency resolution.
+   **/
+  "teambit.dependencies/dependency-resolver": {
+    /**
+     * choose the package manager for Bit to use. you can choose between 'yarn', 'pnpm'
+     */
+    "packageManager": "teambit.dependencies/yarn",
+    "policy": {
+      "dependencies": {
+        "moment": "^2.25.3",
+      },
+      "peerDependencies": {
+        "moment": "^2.13.0",
+        "tslib": "^1.9.3",
+        "react": "16.9.0",
+        "react-dom": "16.9.0",
+        "mdast-util-to-hast": "10.0.1",
+        "@elastic/datemath": "^5.0.2"
+      }
+    }
+  },
+  /**
+   * workspace variants allow to set different subsets of configuration for components in your workspace.
+   * this is extremely useful for upgrading, aligning and building components with a
+   * new set of dependencies.
+   **/
+  "teambit.workspace/variants": {
+    /**
+     * "*" is a special rule which applied on all components in the workspace.
+     **/
+    "*": {
+      /**
+       * uncomment to apply the react environment on all components.
+       **/
+      "teambit.react/react": { }
+    }
+  },
+  "teambit.ui-foundation/ui": {
+    "port": 3003,
+    "portRange": [3003, 3100],
+    "host": "localhost",
+    "publicDir": "public/bit"
+  }
+}
